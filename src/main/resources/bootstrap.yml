@@ -1,11 +1,14 @@
 ---
 spring:
   application:
-    name: manufacturer-microservice
+    name: order-lb
   cloud:
     config:
       uri: http://localhost:8080
       
+       
+      
 server:
-  port: 8002
+  port: 8006
+  
   

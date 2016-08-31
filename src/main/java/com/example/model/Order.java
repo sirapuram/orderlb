@@ -9,17 +9,17 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Document(collection="sgmfrs")
-public class Manufacturer {
+public class Order {
 	
 	@Id
 	private int id;
 	private String name;
     
 	@JsonFormat(shape=JsonFormat.Shape.STRING,pattern="yyyy-MM-dd")
-	private Date foundedDate;
+	private Date orderDate;
 	private Boolean active;
 	
-	public Manufacturer(){
+	public Order(){
 		
 	}
 	
@@ -45,12 +45,12 @@ public class Manufacturer {
 
 
 	public Date getFoundedDate() {
-		return foundedDate;
+		return orderDate;
 	}
 
 
 	public void setFoundedDate(Date foundedDate) {
-		this.foundedDate = foundedDate;
+		this.orderDate = foundedDate;
 	}
 
 
@@ -64,10 +64,10 @@ public class Manufacturer {
 	}
 
 
-	public Manufacturer(int id, String name, Date foundedDate, Boolean active) {
+	public Order(int id, String name, Date foundedDate, Boolean active) {
 		this.id = id;
 		this.name = name;
-		this.foundedDate = foundedDate;
+		this.orderDate = foundedDate;
 		this.active = active;
 	}
 	

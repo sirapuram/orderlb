@@ -6,8 +6,8 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = ManufacturermsApplication.class)
-public class ManufacturermsApplicationTests {
+@SpringApplicationConfiguration(classes = OrdersLBApplication.class)
+public class OrdersLBApplicationTests {
 
 	@Test
 	public void contextLoads() {
